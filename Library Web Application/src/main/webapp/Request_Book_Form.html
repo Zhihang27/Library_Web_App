@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Request Book Form</title>
+</head>
+<body>
+
+<form name = requestBookForm method = "post" action = "addRequestServlet">
+<h1>Request Book</h1>
+
+Student Name
+<br>
+<input type = "text" name = "firstName" placeholder = "First"> <input type = "text" name = "lastName" placeholder = "Last">
+
+<br>
+<br>
+Library ID
+<input type = "text" name = "idLibrary">
+
+<br>
+<br>
+Book Title
+<input type = "text" name = "title">
+
+<br>
+<br>
+Author
+<br>
+<input type = "text" name = "authorFirstName" placeholder = "First"> <input type = "text" name = "authorLastName" placeholder = "Last">
+
+<br>
+<br>
+More information about the book requested:
+<br>
+<textarea rows = "8" cols = "48" name = "moreInfo"></textarea>
+
+<br>
+<br>
+<input type = "submit" value = "Submit">
+
+</form>
+<br>
+<a href = "viewRequestServlet">Show Book Requests List</a>
+</body>
+</html>

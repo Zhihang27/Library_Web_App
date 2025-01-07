@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add Book Form</title>
+</head>
+<body>
+
+<form name = newBookForm method = "post" action = "addBookServlet">
+<h1>Add Book</h1>
+
+<b>Title:</b>
+<input type = "text" name = "title" placeholder = "Name of book">
+
+<br>
+<br>
+<b>Author:</b>
+<input type = "text" name = "author" placeholder = "Author of book">
+
+<br>
+<br>
+<b>Summary:</b>
+<input type = "text" name = "summary" placeholder = "Summary">
+
+<br>
+<br>
+<b>ISBN:</b>
+<input type = "text" name = "isbn" placeholder = "ISBN13">
+
+<br>
+<br>
+<b>Genre:</b>
+<input type = "checkbox" name = "genre" value = "Fantasy"/> Fantasy
+<input type = "checkbox" name = "genre" value = "Science Fiction"/> Science Fiction
+<input type = "checkbox" name = "genre" value = "Action"/> Action
+
+<br>
+<br>
+<input type = "submit" value = "Submit">
+</form>
+
+<br>
+<a href = "viewBookServlet">Show Book List</a>
+</body>
+</html>

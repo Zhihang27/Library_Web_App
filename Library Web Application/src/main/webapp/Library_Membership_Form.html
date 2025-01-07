@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Library Membership Form</title>
+</head>
+<body>
+
+<form name = libraryMembershipForm method = "post" action = "addMemberServlet">
+<h1>Library Membership Form</h1>
+
+Name
+<br>
+<input type = "text" name = "firstName" placeholder = "First Name"> <input type = "text" name = "lastName" placeholder = "Last Name">
+
+<br>
+<br>
+Student Number
+<br>
+<input type = "text" name = "idNumber" placeholder = "ex: 1234567">
+
+<br>
+<br>
+Faculty
+<br>
+<select name = "facultyCat">
+	<option value = "Professor">Professor</option>
+	<option value = "Associate Professor">Associate Professor</option>
+	<option value = "Research Professor">Research Professor</option>
+</select>
+
+<br>
+<br>
+Department
+<br>
+<input type = "text" name = "department">
+
+<br>
+<br>
+Phone Number
+<br>
+<input type = "text" name = "phoneNumber" placeholder = "(000) 000-0000">
+<br>
+<i>Please enter a valid phone number.</i>
+
+<br>
+<br>
+Email
+<br>
+<input type = "text" name = "email" placeholder = "example@example.com">
+<br>
+<i>Please enter a valid email.</i>
+
+<br>
+<br>
+<input type = "submit" value = "Submit">
+
+</form>
+<br>
+<a href = "viewMemberServlet">Show Member List</a>
+</body>
+</html>
